@@ -1,0 +1,3 @@
+
+# ignore local source not for release
+main.cc
