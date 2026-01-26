@@ -1,4 +1,4 @@
-# CIPD Backoff Mechanism in Multi-Rate WLANs via Multi-Agent DRL with Bi-LSTM Model
+# CIPD-DRL for Multi-Rate WLANs
 
 Based on my [first project](https://github.com/itstuyihao/CIPD-802.11), I extend my CIPD backoff mechanism from a single-rate to a multi-rate scenario by using a **sequence transduction model with multi-agent DRL** framework to improve the overall performance. However, because this project is still under consideration by the journal, I provide only part of the scripts for concept demonstration purposes in this repository. I will provide full access to the code once this project is accepted by the journal.
 
