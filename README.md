@@ -19,7 +19,7 @@ Proprietary. Evaluation-only. You may run this software solely for personal and 
 ```
 
 Notes:
-- `cipd_drl` is the C++ WLAN/PIPD simulator (compiled binary); as a **server** listening on port 5555.
+- `cipd_drl` is the C++ WLAN/CIPD simulator (compiled binary); as a **server** listening on port 5555.
 - `model.py` hosts the Bi-LSTM dueling DQN agents; as a **client** connecting to 127.0.0.1:5555, sampling actions, storing transitions, and training.
 - Outputs (e.g., output_sta*.txt) are written under `static/exp1`; you can plot with `CIPD-802.11/tools/generate_plot.sh static/exp1 Image` via [here](https://github.com/itstuyihao/CIPD-802.11/blob/main/tools/generate_plot.sh).
 
