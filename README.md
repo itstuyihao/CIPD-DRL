@@ -3,9 +3,6 @@
 ## Overview
 Based on my [first project](https://github.com/itstuyihao/CIPD-802.11), I extend my CIPD backoff mechanism from a single-rate to a multi-rate scenario by using a **sequence transduction model with multi-agent DRL** framework to improve the overall performance. However, because this project is still under consideration by the journal, I provide only part of the scripts for concept demonstration purposes in this repository. I will provide full access to the code once this project is accepted by the journal.
 
-## License
-Proprietary. Evaluation-only. You may run this software solely for personal and internal evaluation purposes. No permission is granted to copy, modify, distribute, or create derivative works without written permission from the author [itstuyihao@gmail.com](mailto:itstuyihao@gmail.com). See [LICENSE](LICENSE).
-
 ## Interface (Agent–Environment Interaction)
 ```
    DRL Agent (Python, model.py)                  Environment (C++, cipd_drl)
@@ -37,3 +34,6 @@ python3 model.py 127.0.0.1 5555   # connects to the env and trains
    - The agent connects to the env on TCP port 5555 and exchanges ACT/PREDICT/STORE/LEARN.
 
 3) Outputs go to `static/exp1`.
+
+## License
+Proprietary. Evaluation-only. You may run this software solely for personal and internal evaluation purposes. No permission is granted to copy, modify, distribute, or create derivative works without written permission from the author [itstuyihao@gmail.com](mailto:itstuyihao@gmail.com). See [LICENSE](LICENSE).
