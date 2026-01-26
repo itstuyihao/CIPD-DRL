@@ -8,12 +8,17 @@ Based on my [first project](https://github.com/itstuyihao/CIPD-802.11), I extend
    DRL Agent (Python, model.py)                  Environment (C++, cipd_drl)
  +------------------------------------+        +-----------------------------------+
  | acts:  ACT / PREDICT requests      |        | serves:  TCP 127.0.0.1:5555       |
- | learns: STORE / LEARN calls        |        | sim: WLAN multi-rate DCF via CIPD |
+ | learns: STORE / LEARN calls        |        | sim: multi-rate WLAN via CIPD     |
  +------------------+-----------------+        +------------------+----------------+
-                    |                                              ^
-                    |    TCP socket (observations -> agent,        |
-                    |     actions/experiences -> env)              |
-                    +------------------------------->--------------+
+                    |                                             |
+                    | /////////////// TCP socket //////////////// |
+                    |                                             |
+                    |---------- (observations -> agent, --------->|
+                    |            actions/experiences -> env)      |
+                    |                                             |
+                    |<------------ rewards / next_obs ------------|
+
+
 ```
 
 Notes:
