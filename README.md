@@ -1,4 +1,4 @@
-# CIPD with Bi-directional LSTM DRL Model in Multi-Rate Wi-Fi
+# CIPD backoff mechanism with multi-agent Bi-LSTM DRL Model in multi-rate Wi-Fi
 
 Based on my [first project](https://github.com/itstuyihao/CIPD-802.11), I extend my CIPD backoff mechanism from a single-rate to a multi-rate scenario by using a **sequence transduction model with multi-agent DRL** framework to improve the overall performance. However, because this project is still under consideration by the journal, I provide only part of the scripts for concept demonstration purposes in this repository. I will provide full access to the code once this project is accepted by the journal.
 
@@ -26,7 +26,7 @@ Notes:
 ## How to Run
 1) Run the environment (terminal 1):
 ```bash
-./cipd_drl   # C++ WLAN/PIPD simulator listening on 5555
+./cipd_drl   # C++ WLAN/CIPD simulator listening on 5555
 ```
 
 2) Run the DRL agent (terminal 2):
